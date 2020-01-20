@@ -10,6 +10,4 @@ To run backend
  - Back end will run in this url "http://localhost:5000/cards/getAll"
 
 
- Once backend started running then you can able to add the credit card through this URL: http://localhost:3000/
- Make sure backend is running.
- 
+
