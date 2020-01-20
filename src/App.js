@@ -30,6 +30,7 @@ class App extends Component {
       <div className="App">
         <AddCard addCard={this.addCard}/>
         <ShowCard cards={this.state.cards}/>
+        <Persons/>
       </div>
     );
   }
