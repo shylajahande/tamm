@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+}
+body{
+  font-family: 'Public Sans', sans-serif;
+}
+h1,h2,h3,h4,h5{
+  font-weight: 400;
+}
+.App{
+  margin: 0 auto;
+  width: 95%;
+  padding: 20px 0 50px;
+}
+.titleCard{ 
+  font-size: 25px;
+  margin: 0 0 10px;
+}
+.subTitle{
+  margin: 0 0 10px;
+}
+.add-card-form{
+  margin: 0 0 15px;
+  label{
+    font-size: 13px;
+    margin: 0 0 5px;
+  }
+  input{
+    margin: 5px 0 10px;
+    padding: 5px 10px 5px 0;
+    width: 220px;
+  }
+  input.button{
+    width: auto;
+    padding: 10px 25px;
+    background: #ccc;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover{
+      background-color: #868383;
+    }
+  }
+}
+span.errorMsg {
+  color: red;
+  font-size: 12px;
+  margin-left: 10px;
+  @media screen and (max-width:768px){
+    margin: 0;
+    display: block;
+  }
+}
+.row {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  div{
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-bottom: 0;
+    border-right: 0;
+    padding: 10px;
+  }
+  @media screen and (max-width:500px){
+    grid-template-columns: 25% 30% 23% 23%;
+    font-size: 12px;
+  }
+}
+
+.row:first-child > div {
+  background-color: #e0e0e0;
+}
+  
+.row > div:last-child {
+  border-right: 1px solid #ccc;
+}
+
+.row:last-child > div {
+  border-bottom: 1px solid #ccc;
+}
